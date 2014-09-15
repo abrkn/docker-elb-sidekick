@@ -20,7 +20,7 @@ function cleanup() {
     exit
 }
 
-trap cleanup EXIT
+trap cleanup TERM INT
 
-sleep infinity
+while [ 1 ]; do sleep 1; done
 
