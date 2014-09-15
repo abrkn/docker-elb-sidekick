@@ -20,7 +20,7 @@ function cleanup() {
     exit
 }
 
-trap cleanup SIGTERM SIGINT SIGKILL SIGHUP
+trap cleanup EXIT
 
 sleep infinity
 
